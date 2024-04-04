@@ -1,0 +1,493 @@
+Test Case ID: TC-001valid
+
+Test Scenario: Verify the users can search for nearby storage locations via a valid zip code
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select first option "33122(Miami,FL)"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: Zip Code 33122
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from the user's  location.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211
+
+Test Status - Pass/Fail:
+Pass
+
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-002
+
+Test Scenario: Verify the users can search for nearby storage locations via a valid city
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "San Jose"
+3- Select first option "San Jose, CA"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: city "San Jose, CA"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from the user's location.
+
+Actual Results:
+The application shows a result page with the nearest storage from city "San Jose, CA"
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-003
+
+Test Scenario: Verify the users can search for nearby storage locations via a valid state
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "Texas" 
+3- Select first option "Texas, MO"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: state "Texas, MO"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from the user's location.
+
+Actual Results:
+The application shows a result page with the nearest storage from state "Texas, MO"
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-004
+
+Test Scenario: Verify the users can search for nearby storage locations via a valid landmark
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "Statue of Liberty"
+3- Select first option "Statue of Liberty"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: landmark "Statue of Liberty"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from the user's location.
+
+Actual Results:
+The application shows the loading animation and is not able to show any result or error message
+
+Test Status - Pass/Fail:
+Fail
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-005
+
+Test Scenario: Verify error handling on find the nearest storage facility with all fields empty
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data:
+
+Expected/Intended Results: 
+Show an error messajes to request to field the location input
+
+Actual Results:
+The The application shows an error message in red "Please enter your zip/postal code, city or address."
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-006
+
+Test Scenario: Veirify error handling with a invalid zip code
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "12"
+3- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: zip code "12"
+
+Expected/Intended Results: 
+Show an error message to request to field the location input
+
+Actual Results:
+The The application shows an error message in red "We could not find your location. Please enter your zip/postal code, city or address again."
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-007
+
+Test Scenario: Veirify error handling with a invalid city
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "Puntarenas"
+3- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: city "Puntarenas"
+
+Expected/Intended Results: 
+Show an error message to request to field the location input
+
+Actual Results:
+The The application shows an error message in red "We could not find your location. Please enter your zip/postal code, city or address again."
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-008
+
+Test Scenario: Veirify error handling with a invalid state
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "Puebla"
+3- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: state "Puebla"
+
+Expected/Intended Results: 
+Show an error message to request to field the location input
+
+Actual Results:
+The The application shows an error message in red "We could not find your location. Please enter your zip/postal code, city or address again."
+
+Test Status - Pass/Fail:
+Pass
+
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-009
+
+Test Scenario: Veirify error handling with a invalid landmark
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "epcot3"
+3- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: state "epcot3"
+
+Expected/Intended Results: 
+Show an error message to request to field the location input
+
+Actual Results:
+The The application shows an error message in red "We could not find your location. Please enter your zip/postal code, city or address again."
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-010
+
+Test Scenario: Verify find the nearest storage facility selecting a single unit sizes
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Unit Size "Small (Storage Locker, 5x5, 5x10)"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: zip code "33122" and Unit Size "Small (Storage Locker, 5x5, 5x10)"
+
+Expected/Intended Results:
+Open the results page showing the nearest storage units from users location and filtered by small unit size.
+In the filter and sort location panel, in the unit size section, the small checkbox needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by small unit size.
+In the filter and sort location panel, in the unit size section, the small checkbox is selected.
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-011
+
+Test Scenario: Verify find the nearest storage facility selecting multiples unit size
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Unit Size "Small (Storage Locker, 5x5, 5x10)", and "Large (10x20, 10x25, 10x30)"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: zip code "33122" and Unit Size "Small (Storage Locker, 5x5, 5x10)" and "Large (10x20, 10x25, 10x30)"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from users location and filtered by small, and large unit size.
+In the filter and sort location panel, in the unit size section, the small and large checkbox needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by small, and large unit size.
+In the filter and sort location panel, in the unit size section, the small and large checkbox are selected.
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-012
+
+Test Scenario: Verify find the nearest storage facility selecting a single types of storage
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Types of Storage "Climate Control"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: zip code "33122" and Types of Storage "Climate Control"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from users location and filtered by types of storage "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control checkbox needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by types of storage with "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control checkbox is selected.
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-013
+
+Test Scenario: Verify find the nearest storage facility selecting multiples types of storage
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Types of Storage "Climate Control", and "Wine Storage"
+4- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: zip code "33122" and and Types of Storage "Climate Control", and "Wine Storage"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from users location and filtered by types of storage "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control and Wine Storage checkbox needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by types of storage with "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control and Wine Storage checkbox are selected.
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-014
+
+Test Scenario: Verify find the nearest storage facility selecting a single unit sizes and multiples types of storage
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Unit Size "Small (Storage Locker, 5x5, 5x10)"
+4- Select Types of Storage "Climate Control", and "Wine Storage"
+5- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: 
+zip code "33122" 
+Unit Size "Small (Storage Locker, 5x5, 5x10)"
+Types of Storage "Climate Control", and "Wine Storage"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from users location and filtered by unit size small, and by types of storage "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control and Wine Storage checkbox needs to be selected.
+In the filter and sort location panel, in the unit size section, the small checkbox needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by types of storage with "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control and Wine Storage checkbox are selected.
+In the filter and sort location panel, in the unit size section, the small checkbox is selected.
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-015
+
+Test Scenario: Verify find the nearest storage facility selecting multiples unit size and a single type of storage
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Unit Size "Small (Storage Locker, 5x5, 5x10)", and "Large (10x20, 10x25, 10x30)"
+4- Select Types of Storage "Climate Control"
+5- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: 
+zip code "33122" 
+Unit Size "Small (Storage Locker, 5x5, 5x10)", and "Large (10x20, 10x25, 10x30)"
+Types of Storage "Climate Control"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from users location and filtered by unit size small, and by types of storage "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control checkbox needs to be selected.
+In the filter and sort location panel, in the unit size section, the small, and large checkbox needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by types of storage with "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control checkbox is selected.
+In the filter and sort location panel, in the unit size section, the small, and large checkbox is selected.
+
+Test Status - Pass/Fail:
+Pass
+
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-016
+
+Test Scenario: Verify find the nearest storage facility selecting multiples unit sizes and a single type of storage
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Unit Size "Small (Storage Locker, 5x5, 5x10)", and "Large (10x20, 10x25, 10x30)"
+4- Select Types of Storage "Climate Control"
+5- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: 
+zip code "33122" 
+Unit Size "Small (Storage Locker, 5x5, 5x10)", and "Large (10x20, 10x25, 10x30)"
+Types of Storage "Climate Control", and "Wine Storage"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from users location and filtered by unit size small, and by types of storage "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control checkbox needs to be selected.
+In the filter and sort location panel, in the unit size section, the small, and large checkboxes needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by types of storage with "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control checkbox are selected.
+In the filter and sort location panel, in the unit size section, the small, and large checkboxes are selected.
+
+Test Status - Pass/Fail:
+Pass
+
+---------------------------------------------------------------------
+
+Test Case ID: TC-017
+
+Test Scenario: Verify find the nearest storage facility selecting multiples unit sizes and multiples types of storage
+
+Test Steps:
+1- Go to https://www.uhaul.com/Storage/
+2- In "Your Location" input type "33122"
+3- Select Unit Size "Small (Storage Locker, 5x5, 5x10)", and "Large (10x20, 10x25, 10x30)"
+4- Select Types of Storage "Climate Control", and "Wine Storage"
+5- Clik on "Find Storage" button
+
+Prerequisites:
+
+Browser: Chrome 123.0.6312.59 with MacOs 14.2.1
+
+Test Data: 
+zip code "33122" 
+Unit Size "Small (Storage Locker, 5x5, 5x10)", and "Large (10x20, 10x25, 10x30)"
+Types of Storage "Climate Control", and "Wine Storage"
+
+Expected/Intended Results: 
+Open the results page showing the nearest storage units from users location and filtered by unit size small, and by types of storage "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control and Wine Storage checkboxes needs to be selected.
+In the filter and sort location panel, in the unit size section, the small, and large checkboxes needs to be selected.
+
+Actual Results:
+The application shows a result page with the nearest storage from zip code 33211 and filtered by types of storage with "Climate Control".
+In the filter and sort location panel, in the feature section, the Climate Control and Wine Storage checkbox are selected.
+In the filter and sort location panel, in the unit size section, the small, and large checkboxes are selected.
+
+Test Status - Pass/Fail:
+Pass
