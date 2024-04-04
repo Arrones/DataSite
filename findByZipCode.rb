@@ -4,6 +4,8 @@ require "test/unit"
 class SeleniumRubyTest < Test::Unit::TestCase
 @@driver
 
+# TC-001
+
 def setup
 # create Driver object for Chrome
 @@driver = Selenium::WebDriver.for :chrome
